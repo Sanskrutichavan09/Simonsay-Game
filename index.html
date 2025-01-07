@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siman Say Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Simon Say Game</h1>
+    <h2>press any key to start the game</h2>
+    <div class="btn-container">
+        <div class="lineone">
+            <button onclick="playSound('sounds/green.mp3')" class="btn green" type="button" id="green">1</button>
+            <button onclick="playSound('sounds/red.mp3')" class="btn red" type="button" id="red">2</button>
+        </div>
+        <div class="linetwo">
+            <button onclick="playSound('sounds/yellow.mp3')" class="btn yellow" type="button" id="yellow">3</button>
+            <button onclick="playSound('sounds/blue.mp3')" class="btn blue" type="button" id="blue">4</button>
+        </div>
+        
+       
+    </div>
+    <script>
+         function playSound(soundFile) {
+            let sound = new Audio(soundFile);
+            sound.play();
+         }
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>
